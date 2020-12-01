@@ -102,21 +102,18 @@
             <body>
                 <section class="container-fluid bg">
                     <section class="row justify-content-center">
-                        <section class="con-12 col-sm-6 col-md-3">
+                        <section class="w3-col m6">
                             <form class="form-container">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" placeholder="knitro@ucf.knights.edu"
+                                        id="exampleInputEmail1" aria-describedby="emailHelp">
                                     <small id="emailHelp" class="form-text text-muted">Enter email address.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    <input type="password" class="form-control" placeholder="********"
+                                        id="exampleInputPassword1">
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
                             </form>
@@ -158,7 +155,7 @@
         </div>
 
         <!-- The Signup Section -->
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="signup">
+        <div class="w3-container w3-black w3-content w3-center w3-padding-64" style="max-width:800px" id="signup">
             <h2 class="w3-wide">Sign Up</h2>
             <!doctype html>
             <html lang="en">
@@ -175,11 +172,12 @@
                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                     crossorigin="anonymous">
             </head>
+
             </html>
         </div>
 
         <!-- The Event Section -->
-        <div class="w3-black" id="events">
+        <div class="w3-white" id="events">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <h2 class="w3-wide w3-center">Upcoming Events</h2>
                 <p class="w3-opacity w3-center"><i>Keep Track of Upcoming Events</i></p><br>
@@ -231,7 +229,7 @@
             </div>
         </div>
 
-        <!-- Events Modal -->
+        <!-- Events Modal
         <div id="events" class="w3-modal">
             <div class="w3-modal-content w3-animate-top w3-card-4">
                 <header class="w3-container w3-teal w3-center w3-padding-32">
@@ -252,10 +250,10 @@
                     <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <div class="w3-black w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
             <h2 class="w3-wide w3-center">CONTACT</h2>
             <p class="w3-opacity w3-center"><i>Questions? Contact us here!</i></p>
             <div class="w3-row w3-padding-32">
@@ -278,6 +276,48 @@
                         <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
                     </form>
                 </div>
+            </div>
+        </div>
+
+        <!-- The Event Form Section -->
+        <div class="w3-white" id="events">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">Event Forms</h2>
+                <p class="w3-opacity w3-center"><i>Create a Form!</i></p><br>
+                <form>
+                    <div class="mb-3">
+                        <label for="validationDefault01">Event Title</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationTextarea">Event Description</label>
+                        <textarea class="form-control" id="validationDefault02"
+                            placeholder="Brief Event Description" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">Event Start Date</label>
+                            <input type="text" class="form-control" placeholder="01/01/2021" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">Event End Date</label>
+                            <input type="text" class="form-control" placeholder="12/12/2021"id="validationDefault04" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationDefault05">Event Address</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zoom: Invite Link" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning" type="submit">Submit form</button>
+                </form>
             </div>
         </div>
 
