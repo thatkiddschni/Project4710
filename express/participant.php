@@ -25,15 +25,25 @@
 			<!-- <form action="https://stackoverflow.com/questions/52229901/navigate-to-route-on-button-click/">
                 <input type="submit" value="Visit Website"/>
             </form> -->
-			<a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
-			<a href="#signup" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNUP</a>
+			<a href="#events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVENTS</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="#" class="w3-bar-item w3-button">Merchandise</a>
+					<a href="#" class="w3-bar-item w3-button">Extras</a>
+					<a href="#" class="w3-bar-item w3-button">Memes</a>
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+					class="fa fa-search"></i></a>
 		</div>
 	</div>
 
 	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-		<a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-		<a href="#signup" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 	</div>
 
 	<!-- Page content -->
@@ -62,6 +72,86 @@
 				<p><b>Event3</b></p>
 			</div>
 		</div>
+
+		<!-- The Event Section -->
+        <div class="w3-white" id="events">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">Upcoming Events</h2>
+                <p class="w3-opacity w3-center"><i>Keep Track of Upcoming Events</i></p><br>
+
+                <ul class="w3-ul w3-border w3-white w3-text-grey">
+                    <li class="w3-padding">December <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                    <li class="w3-padding">January <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                    <li class="w3-padding">Febuary <span class="w3-badge w3-right w3-margin-right">3</span></li>
+                </ul>
+
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>New York</b></p>
+                            <p class="w3-opacity">Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Paris</b></p>
+                            <p class="w3-opacity">Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>San Francisco</b></p>
+                            <p class="w3-opacity">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+		<!-- The Contact Section -->
+        <div class="w3-black w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <p class="w3-opacity w3-center"><i>Questions? Contact us here!</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Orlando, US<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 407-225-2212<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: knitro@ucf.knights.edu<br>
+                </div>
+                <div class="w3-col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
