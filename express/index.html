@@ -47,8 +47,8 @@
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-        <a href="#signup" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+        <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOGIN</a>
+        <a href="#signup" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SIGNUP</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
     </div>
@@ -115,7 +115,7 @@
                                     <input type="password" class="form-control" placeholder="********"
                                         id="exampleInputPassword1">
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                <button type="submit" class="btn btn-warning btn-block">Submit</button>
                             </form>
                         </section>
                     </section>
@@ -156,10 +156,6 @@
 
         <!-- The Signup Section -->
         <div class="w3-container w3-black w3-content w3-center w3-padding-64" style="max-width:800px" id="signup">
-            <h2 class="w3-wide">Sign Up</h2>
-            <!doctype html>
-            <html lang="en">
-
             <head>
                 <title>Sign Up Form</title>
                 <link rel="stylesheet" type="text/css" href="css/global.css">
@@ -172,6 +168,47 @@
                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                     crossorigin="anonymous">
             </head>
+            <body>
+                <section class="container-fluid bg">
+                    <section class="row justify-content-center">
+                        <section class="w3-col m6">
+                            <form class="form-container">
+                                <h1>Sign up</h1>
+                                <div class="form-group">
+                                    <input type="username" class="form-control" placeholder="John" id="usernameInput">
+                                    <label for="usernameInput">Username</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Smith"id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="******" id="exampleInputPassword1">
+                                    <label for="exampleInputPassword1">Password</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="userType" class="form-control" placeholder="User" id="userInput">
+                                    <label for="userInput">User Level</label>
+                                </div>
+                                <button type="submit" class="btn btn-warning btn-block mt-2 mb-3">Submit</button>
+                            </form>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+            </body>
 
             </html>
         </div>
@@ -287,26 +324,35 @@
                 <form>
                     <div class="mb-3">
                         <label for="validationDefault01">Event Title</label>
-                        <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Title" required>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Title"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="validationTextarea">Event Description</label>
-                        <textarea class="form-control" id="validationDefault02"
-                            placeholder="Brief Event Description" required></textarea>
+                        <textarea class="form-control" id="validationDefault02" placeholder="Brief Event Description"
+                            required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationDefault02">Event Webpage</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Event Link"
+                            required>
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault03">Event Start Date</label>
-                            <input type="text" class="form-control" placeholder="01/01/2021" id="validationDefault03" required>
+                            <input type="text" class="form-control" placeholder="01/01/2021" id="validationDefault03"
+                                required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault04">Event End Date</label>
-                            <input type="text" class="form-control" placeholder="12/12/2021"id="validationDefault04" required>
+                            <input type="text" class="form-control" placeholder="12/12/2021" id="validationDefault04"
+                                required>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="validationDefault05">Event Address</label>
-                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zoom: Invite Link" required>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zoom: Invite Link"
+                            required>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
